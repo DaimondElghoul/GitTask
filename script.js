@@ -7,10 +7,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Simple validation
     if (username === "user" && password === "password") {
-        alert("Login successful!");
+        alert(" Login successful!");
         errorMessage.style.display = "none";
     } else {
         errorMessage.style.display = "block";
+        errorMessage.style.color="black";
         errorMessage.textContent = "Invalid username or password.";
     }
 });
