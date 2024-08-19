@@ -1,4 +1,5 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
+
     event.preventDefault(); // Prevent form submission
 
     var username = document.getElementById('username').value;
@@ -13,4 +14,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         errorMessage.style.display = "block";
         errorMessage.textContent = "Invalid username or password.";
     }
+    
 });
